@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int N,A,B;
+    cin>>N>>A>>B;
+    int sa=0, sb=0;
+    for (int i=1; i<=A; i++) sa+=i;
+    for (int i=1; i<=B; i++) sb+=i;
+    while (N<1000){
+        if (N%2==0) N+=sa;
+        else N+=sb;
+    }
+    cout<<N<<endl;
+    return 0;
+}
