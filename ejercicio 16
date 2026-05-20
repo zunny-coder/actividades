@@ -1,0 +1,21 @@
+//fracciones propias a mixtas
+#include <iostream>
+using namespace std;
+int main ()
+{
+    int a;b;
+    cout<<"numerador: "<<endl;
+    cin>>a;
+    cout<<"denominador: ";
+    cin>>b;
+    int e=a/b;
+    int r=a%b;
+    if (e>0 and r>0) {
+        cout<<"fraccion mixta"<<e<<" "<<r<<"/"<<b<<endl;
+    }else if (e>0 and r==0){
+        cout<<"resultado entero"<<e<<endl;
+    } else {
+        cout<<"fraccion propia"<<r<<"/"<<b<<endl;
+    }
+    return 0;
+}

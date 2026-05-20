@@ -1,0 +1,20 @@
+//dos gatos y un raton
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main ()
+{
+int a,b,c;
+if (cin>>a>>b>>c){
+    int d1= abs(a-c);
+    int d2= abs(b-c);
+    if (d1<d2) {
+        cout<<"gato A"<<endl;
+    } else if (d2<d1){
+        cout<<"gato B"<<endl;
+    } else {
+        cout<<"raton"<<endl;
+    }
+}
+return 0;
+}
